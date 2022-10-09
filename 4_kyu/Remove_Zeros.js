@@ -10,10 +10,10 @@ function removeZeros(array) {
     // to use any Array or Object prototype methods such as .shift(), .push(), etc
 
     // the correctly sorted array should be returned.
-    for (var i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         while (array[i] == 0) {
             let cheack = false;
-            for (var k = i + 1; k < array.length; k++) {
+            for (let k = i + 1; k < array.length; k++) {
                 if (array[k] != 0) {
                     cheack = true;
                     break;
@@ -21,7 +21,7 @@ function removeZeros(array) {
             }
             if (cheack) {
                 let temp = array[i];
-                for (var j = i; j < array.length; j++) {
+                for (let j = i; j < array.length; j++) {
                     if (j == array.length - 1) {
                         array[j] = temp;
                     } else {

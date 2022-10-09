@@ -2,5 +2,5 @@
 // Sum Numbers
 function sum (numbers) {
     return numbers.filter(e => typeof e === 'number' ).length === 0 ? 0 : numbers.filter(e => typeof e === 'number' ).reduce((sum, e) => sum + e,0)
-};
+}
 console.log(sum([1, 5.2, 4, 0, -1]));
